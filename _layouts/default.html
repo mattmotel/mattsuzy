@@ -37,7 +37,18 @@
     box-shadow: 
     0 0 0 5px rgba(101,27,54,1),
     0 0 0 7px rgba(255,255,255,1);
-    }
+    animation: thecolor 10s infinite;
+
+}
+
+/* The animation code */
+@keyframes thecolor {
+0% { box-shadow: 0 0 0 5px #006584, 0 0 0 7px #ffffff; }
+25% { box-shadow: 0 0 0 5px #6c2738, 0 0 0 7px #ffffff; }
+50% { box-shadow: 0 0 0 5px #2588c8, 0 0 0 7px #ffffff; }
+75% { box-shadow: 0 0 0 5px #a45a8f, 0 0 0 7px #ffffff; }
+100% { box-shadow: 0 0 0 5px #006584, 0 0 0 7px #ffffff; }
+}
 
     #graphic{width:130px;}
     #name{width:200px;
