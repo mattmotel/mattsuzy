@@ -56,25 +56,28 @@
             February 25, 2017 at 5pm</p>
             <div id="cal">
                 <!-- 2. Include script -->
-                <script type="text/javascript">
-                (function () {
-                if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-                if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+    <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
                 var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
                 s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
                 s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
                 var h = d[g]('body')[0];h.appendChild(s); }})();
-                </script> <!-- 3. Place event data -->
-                 <span class="addtocalendar atc-style-blue"><var class=
-                "atc_event"><var class="atc_date_start">2017-02-25
-                17:00:00</var> <var class="atc_date_end">2017-02-25
-                23:00:00</var> <var class="atc_timezone">America/New_York</var>
-                <var class="atc_title">Susannah Dusch/Matt McInerney
-                Wedding</var> <var class="atc_description">Diner, drinks,
-                dancing</var> <var class="atc_location">Olde Bar, 125 Walnut
-                St, Philadelphia, PA 19106</var> <var class=
-                "atc_organizer">Susannah Dusch</var> <var class=
-                "atc_organizer_email">susannahdusch@gmail.com</var></var></span>
+    </script>
+
+    <!-- 3. Place event data -->
+    <span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">2017-02-25 17:00:00</var>
+            <var class="atc_date_end">2017-02-25 23:00:00</var>
+            <var class="atc_timezone">America/New_York</var>
+            <var class="atc_title">Susannah Dusch/Matt McInerney Wedding</var> 
+            <var class="atc_description">Diner, drinks, dancing</var>
+            <var class="atc_location">Olde Bar, 125 Walnut St, Philadelphia, PA 19106</var>
+            <var class="atc_organizer">Susannah Dusch</var>
+            <var class="atc_organizer_email">susannahdusch@gmail.com</var>
+        </var>
+      </span>
             </div>
             <p>Olde Bar<br>
             125 Walnut St<br>
