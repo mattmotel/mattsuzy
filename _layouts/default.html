@@ -8,26 +8,36 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel=
     "stylesheet">
+     <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <!-- jQuery Popup Overlay -->
+    <script src="jquery.popupoverlay.js"></script>
+
+
     <style>
+
     body { 
     font-family: 'Poppins', Helvetica, Arial;
     font-size:13px;
     line-height:20px;
     margin:0;
     padding:0;
+    background-image: url(images/color.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+
     }
 
-    #container{
+    .container{
     display: flex;
     justify-content: center;
     align-items: center;
     height:100vh;
-    background-image: url(images/color.jpg);
-    background-size: cover;
-    background-position: fixed;
+
     }
 
-    #box{
+    .box{
     padding:20px;
     background:#fff;
     color:#4e4e4e;
@@ -41,6 +51,21 @@
 
 }
 
+   .popup_content{
+    padding:20px;
+    text-align:center;
+    background:#fff;
+    color:#4e4e4e;
+    width:210px;
+    margin:auto;
+    box-shadow: 
+    0 0 0 5px rgba(101,27,54,1),
+    0 0 0 7px rgba(255,255,255,1);
+    animation: thecolor 10s infinite;
+
+}
+    .popup_content img{width:155px;height:155px;}
+
 /* The animation code */
 @keyframes thecolor {
 0% { box-shadow: 0 0 0 5px #006584, 0 0 0 7px #ffffff; }
@@ -53,52 +78,13 @@
     #graphic{width:130px;}
     #name{width:200px;
     padding:10px 0px;}
+    .cirle{float:left;padding:5px 5px 15px 5px;}
+    .cirle img{width:95px;height:95px;}
+    .clear{clear:both;}
 
 
-    </style>
-    <title></title>
-</head>
-<body>
-    <div id="container">
-        <div id="box">
-            <p><img id="graphic" src="images/x.svg"></p>
-            <p><img id="name" src="images/sm.svg"></p>
-            <p>We're getting married!<br>
-            February 25, 2017 at 5pm</p>
-            <div id="cal">
-                <!-- 2. Include script -->
-    <script type="text/javascript">(function () {
-            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-                var h = d[g]('body')[0];h.appendChild(s); }})();
-    </script>
 
-    <!-- 3. Place event data -->
-    <span class="addtocalendar atc-style-blue">
-        <var class="atc_event">
-            <var class="atc_date_start">2017-02-25 17:00:00</var>
-            <var class="atc_date_end">2017-02-25 23:00:00</var>
-            <var class="atc_timezone">America/New_York</var>
-            <var class="atc_title">Susannah Dusch/Matt McInerney Wedding</var> 
-            <var class="atc_description">Diner, drinks, dancing</var>
-            <var class="atc_location">Olde Bar, 125 Walnut St, Philadelphia, PA 19106</var>
-            <var class="atc_organizer">Susannah Dusch</var>
-            <var class="atc_organizer_email">susannahdusch@gmail.com</var>
-        </var>
-      </span>
-            </div>
-            <p>Olde Bar<br>
-            125 Walnut St<br>
-            Philadelphia, PA 19106</p>
-            <p>More information to come.</p>
-        </div>
-    </div>
-    <style>
-
-    /**
+/**
     * AddToCalendar Blue Style
     * http://addtocalendar.com
     */
@@ -236,6 +222,290 @@
     .atc-style-blue .atcb-item:hover {
     background: rgb(66,129,244);
     }
+
     </style>
+
+    <title>Matt and Susannah</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p><img id="graphic" src="images/x.svg"></p>
+            <p><img id="name" src="images/sm.svg"></p>
+            <p>We're getting married!<br>
+            February 25, 2017 at 5pm</p>
+            <div id="cal">
+                <!-- 2. Include script -->
+    <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
+
+    <!-- 3. Place event data -->
+    <span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">2017-02-25 17:00:00</var>
+            <var class="atc_date_end">2017-02-25 23:00:00</var>
+            <var class="atc_timezone">America/New_York</var>
+            <var class="atc_title">Susannah Dusch/Matt McInerney Wedding</var> 
+            <var class="atc_description">Diner, drinks, dancing</var>
+            <var class="atc_location">Olde Bar, 125 Walnut St, Philadelphia, PA 19106</var>
+            <var class="atc_organizer">Susannah Dusch</var>
+            <var class="atc_organizer_email">susannahdusch@gmail.com</var>
+        </var>
+      </span>
+            </div>
+            <p>Olde Bar<br>
+            125 Walnut St<br>
+            Philadelphia, PA 19106</p>
+            <p>More information to come.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="container">
+    <div class="box">
+  <p>Wedding Party</p>
+
+        <div class="clear">
+           
+        <div class="cirle">
+          
+
+        <a href="#" id="val"><img src="images/val.jpg"/></a>
+        </div>
+        <div id="valpopup"  style="display:none;">
+           <img src="images/val.jpg"/>
+            <p><strong>Valerie – Matron of Honor</strong><br/>Asheville, NC</p>
+<p>How They Met:<br/>In preschool when Valerie was the only person successful in teaching Susannah how to tie her shoes.</p>
+<p>Friendship Cemented:<br/> When Valerie moved in next store, and they were able to share countless sleepovers, snow days, and Saturdays together.
+</p>
+<p>Fun Fact:<br/> Valerie can quote most of Golden Girls (she relates most to Sophia).
+</p>
+
+             <button class="valpopup_close close">Close</button>
+        </div>
+        <div class="cirle">
+          
+
+        <a href="#" id="mark"><img src="images/mark.jpg"/></a>
+        </div>
+        <div id="markpopup"  style="display:none;">
+           <img src="images/mark.jpg"/>
+            <p><strong>Mark – Best Man</strong><br/> Wilimantic, CT</p>
+<p>How They Met:<br/> We met pretty early on in life...</p>
+<p>Friendship Cemented:<br/> He grew on me slowly. Eventually I decided he was a pretty good brother.</p>
+<p>Fun Fact:<br/> He's the 2nd best McInerney brother.</p>
+
+             <button class="markpopup_close close">Close</button>
+        </div>
+
+        <div class="clear">
+
+        </div>
+
+        <div class="cirle">
+          
+
+        <a href="#" id="anne"><img src="images/anne.jpg"/></a>
+        </div>
+        <div id="annepopup"  style="display:none;">
+           <img src="images/anne.jpg"/>
+            <p><strong>Anne – Bridesmaid</strong><br/>Washington, D.C.</p>
+<p>How They Met:<br/> In middle school after realizing they shared the same sense of humor, neighborhood, and shoe size.</p>
+<p>Friendship Cemented:<br/> While camping at a music festival together and definitely not sneaking drinks in the tent… No, not them, definitely not.</p>
+<p>Fun Fact:<br/> World traveler with several future adventures always in the works.</p>
+
+             <button class="annepopup_close close">Close</button>
+        </div>
+        <div class="cirle">
+          
+
+        <a href="#" id="jack"><img src="images/jack.jpg"/></a>
+        </div>
+        <div id="jackpopup"  style="display:none;">
+           <img src="images/jack.jpg"/>
+            <p><strong>Jack – Groomsman</strong><br/>Turners Falls, MA</p>
+<p>How They Met:<br/>  At a show in middleschool.</p>
+<p>Friendship Cemented:<br/> The summer of Postal Service.</p>
+<p>Fun Fact:<br/> We used to be in a band together.</p>
+
+             <button class="jackpopup_close close">Close</button>
+        </div>
+
+        <div class="clear">
+
+        </div>
+
+<div class="cirle">
+         <a href="#" id="katie"><img src="images/katie.jpg"/></a>
+        </div>
+        <div id="katiepopup"  style="display:none;">
+           <img src="images/katie.jpg"/>
+            <p><strong>Katie – Bridesmaid</strong><br/>Savannah, GA</p>
+<p>How They Met:<br/>  In high school when Susannah was both intrigued and intimidated by Katie’s sense of style and music savvy.
+</p>
+<p>Friendship Cemented:<br/> During life talks over a ridiculous amount of Starbucks frappuccinos.
+</p>
+<p>Fun Fact:<br/>It has been scientifically proven that Katie is mother to one of cutest humans of all time, his name is Jonah.</p>
+
+             <button class="katiepopup_close close">Close</button>
+        </div>
+
+        <div class="cirle">
+          
+
+        <a href="#" id="markj"><img src="images/markj.jpg"/></a>
+        </div>
+        <div id="markjpopup"  style="display:none;">
+           <img src="images/markj.jpg"/>
+            <p><strong>Mark – Groomsman</strong><br/>Ridgewood (not Brookyln), NY</p>
+<p>How They Met:<br/> In a college class.</p>
+<p>Friendship Cemented:<br/> Surviving a fall of living together in a studio apartment.</p>
+<p>Fun Fact:<br/> Mark can't keep a plant alive.</p>
+
+             <button class="markjpopup_close close">Close</button>
+        </div>
+
+        <div class="clear">
+
+        </div>
+
+
+<div class="cirle">
+ <a href="#" id="ashley"><img src="images/ashley.jpg"/></a>
+        </div>
+        <div id="ashleypopup"  style="display:none;">
+           <img src="images/ashley.jpg"/>
+            <p><strong>Ashley – Bridesmaid</strong><br/>New York City, NY
+</p>
+<p>How They Met:<br/> When Ashley ENTHUSIASTICALLY introduced herself on her first day of work.
+</p>
+<p>Friendship Cemented:<br/>  On a road trip to visit the Rochester Apple Festival and help Ashley move to NYC.
+</p>
+<p>Fun Fact:<br/> Lover of all things fall &amp; Halloween… And apples, obviously.</p>
+
+             <button class="ashleypopup_close close">Close</button>
+        </div>
+        <div class="cirle">
+          
+
+        <a href="#" id="andy"><img src="images/andy.jpg"/></a>
+        </div>
+        <div id="andypopup"  style="display:none;">
+           <img src="images/andy.jpg"/>
+            <p><strong>Andy – Groomsman</strong><br/>Baltimore, MD</p>
+<p>How They Met:<br/> Twitter</p>
+<p>Friendship Cemented:<br/> Meeting in person after talking online for a year.</p>
+<p>Fun Fact:<br/> We've been recording a podcast together for 4 years.</p>
+
+             <button class="andypopup_close close">Close</button>
+        </div>
+
+        <div class="clear">
+
+        </div>
+
+
+<div class="cirle">
+ <a href="#" id="marlee"><img src="images/marlee.jpg"/></a>
+        </div>
+        <div id="marleepopup"  style="display:none;">
+           <img src="images/marlee.jpg"/>
+            <p><strong>Marlee – Bridesmaid</strong><br/>New York, NY</p>
+<p>How They Met:<br/> Friendship at first sight upon starting a new job together.
+</p>
+<p>Friendship Cemented:<br/>  See above.</p>
+<p>Fun Fact:<br/> Native New Yorker with a closet Sarah Jessica Parker would die for.
+</p>
+
+             <button class="marleepopup_close close">Close</button>
+        </div>
+        <div class="cirle">
+          
+
+        <a href="#" id="stacey"><img src="images/stacey.jpg"/></a>
+        </div>
+        <div id="staceypopup"  style="display:none;">
+           <img src="images/stacey.jpg"/>
+            <p><strong>Stacey – Groomslady</strong><br/>Brooklyn, NY</p>
+<p>How They Met:<br/> Arguing about music at a party.</p>
+<p>Friendship Cemented:<br/> Telling Suzy I wasn't so bad. </p>
+<p>Fun Fact:<br/> Kickstarter pie celebrity. Also... she's the main reason the engagement plan came together.</p>
+
+             <button class="staceypopup_close" class="close">Close</button>
+        </div>
+
+        <div class="clear">
+
+        </div>
+
+
+
+           
+
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function() {
+
+     $( "#anne" ).click(function() {
+$('#annepopup').popup('toggle');
+    });
+
+     $( "#mark" ).click(function() {
+$('#markpopup').popup('toggle');
+    });
+
+          $( "#jack" ).click(function() {
+$('#jackpopup').popup('toggle');
+    });
+
+     $( "#val" ).click(function() {
+$('#valpopup').popup('toggle');
+    });
+
+
+          $( "#katie" ).click(function() {
+$('#katiepopup').popup('toggle');
+    });
+        $( "#markj" ).click(function() {
+$('#markjpopup').popup('toggle');
+    });
+
+        $( "#andy" ).click(function() {
+$('#andypopup').popup('toggle');
+    });
+
+        $( "#marlee" ).click(function() {
+$('#marleepopup').popup('toggle');
+    });
+
+
+    $( "#ashley" ).click(function() {
+$('#ashleypopup').popup('toggle');
+    });
+
+    $( "#stacey" ).click(function() {
+$('#staceypopup').popup('toggle');
+    });
+
+
+    });
+  </script>
+
+
+
+
 </body>
 </html>
