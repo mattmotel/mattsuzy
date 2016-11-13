@@ -19,6 +19,7 @@ body {
     color: $text-color;
     background-image: url(/images/color.jpg);
     background-attachment:fixed;
+    background-size: cover;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
