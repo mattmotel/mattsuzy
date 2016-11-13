@@ -14,15 +14,18 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font-size:13px;
+    font-family:'Poppins', Helvetica, Arial;
     color: $text-color;
-    background-color: $background-color;
+    background-image: url(/images/color.jpg);
+    background-attachment:fixed;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    padding-bottom:100px;
 }
 
 
@@ -100,7 +103,7 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        
     }
 }
 

@@ -2,22 +2,50 @@
 layout: default
 ---
 
-<div class="home">
+  <div class="container">
+        <div class="box">
+            <p><img id="graphic" src="images/x.svg"></p>
+            <p><img id="name" src="images/sm.svg"></p>
+            <p>We're getting married!<br>
+            February 25, 2017 at 5pm<br>
+          Olde Bar<br>
+125 Walnut St<br>
+Philadelphia, PA 19106<br>
+</p>
+            <div id="cal">
+                <!-- 2. Include script -->
+    <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
 
-  <h1 class="page-heading">Posts</h1>
+    <!-- 3. Place event data -->
+    <span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">2017-02-25 17:00:00</var>
+            <var class="atc_date_end">2017-02-25 23:00:00</var>
+            <var class="atc_timezone">America/New_York</var>
+            <var class="atc_title">Susannah Dusch/Matt McInerney Wedding</var> 
+            <var class="atc_description">Diner, drinks, dancing</var>
+            <var class="atc_location">Olde Bar, 125 Walnut St, Philadelphia, PA 19106</var>
+            <var class="atc_organizer">Susannah Dusch</var>
+            <var class="atc_organizer_email">susannahdusch@gmail.com</var>
+        </var>
+      </span>
+            </div>
+           <br/><p>
+Order of Events<br>
+5:00pm: Ceremony<br>
+5:30pm: Cocktail Hour<br>
+6:30pm: Reception<br>
+</p><p>
+Cocktail attire requested</p>
+          
+        </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>

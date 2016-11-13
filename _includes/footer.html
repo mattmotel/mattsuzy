@@ -1,38 +1,15 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+  <div id="menu">
+  	<div id="menu-center">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+  <a href="/"><img src="/images/ico-ring.svg"/><span>Wedding</span></a>
+  <a href="/where"><img src="/images/ico-bed.svg"/><span>Where to Stay</span></a>
+  <a href="/attractions"><img src="/images/ico-map.svg"/><Span>Attractions</span></a>
+  <a href="/party"><img src="/images/ico-party.svg"/><Span>The Party</span></a>
+  <a href="/registry"><img src="/images/ico-registry.svg"/><span>Registry</span></a>
+</div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
+</div>
 
 </footer>
