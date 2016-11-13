@@ -25,7 +25,7 @@ permalink: /where/
 
  <p>Room blocks with discounted prices are limited. For reservations please call numbers listed and mention Dusch/McInerney wedding.</p>
 
-<iframe id="gmap" src="https://www.google.com/maps/d/embed?mid=1gTgj2ophp-doU4SWhGceaWij2oU" onload="this.width=screen.width;" width="100%" height="200"></iframe>
+<div id="gmap2"><iframe id="gmap" src="https://www.google.com/maps/d/embed?mid=1gTgj2ophp-doU4SWhGceaWij2oU" height="200"></iframe></div>
 
 
 </div>
