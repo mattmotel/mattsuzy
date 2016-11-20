@@ -21,25 +21,25 @@ padding:0;}
     }
 
     .box{
-    padding:20px;
+    padding:20px 10px;
     background:#fff;
     color:#4e4e4e;
-    width:210px;
+    width:220px;
     margin:auto;
     text-align:center;
     box-shadow: 
-    0 0 0 5px rgba(101,27,54,1),
-    0 0 0 7px rgba(255,255,255,1);
+    0 0 0 12px rgba(101,27,54,1),
+    0 0 0 14px rgba(255,255,255,1);
     animation: thecolor 10s infinite;
 }
 
 /* The animation code */
 @keyframes thecolor {
-0% { box-shadow: 0 0 0 5px #006584, 0 0 0 7px #ffffff; }
-25% { box-shadow: 0 0 0 5px #6c2738, 0 0 0 7px #ffffff; }
-50% { box-shadow: 0 0 0 5px #2588c8, 0 0 0 7px #ffffff; }
-75% { box-shadow: 0 0 0 5px #a45a8f, 0 0 0 7px #ffffff; }
-100% { box-shadow: 0 0 0 5px #006584, 0 0 0 7px #ffffff; }
+0% { box-shadow: 0 0 0 12px #006584, 0 0 0 14px #ffffff; }
+25% { box-shadow: 0 0 0 12px #841733, 0 0 0 14px #ffffff; }
+50% { box-shadow: 0 0 0 12px #a45a8f, 0 0 0 14px #ffffff; }
+75% { box-shadow: 0 0 0 12px #6c2738, 0 0 0 14px #ffffff; }
+100% { box-shadow: 0 0 0 12px #006584, 0 0 0 14px #ffffff; }
 }
 
 .page-content {
@@ -134,14 +134,38 @@ padding:0;}
     #name{width:200px;
     padding:10px 0px;}
     .cirle{float:left;padding:5px;}
-    .cirle img{width:150px;height:150px;border:5px solid #fff;}
+    .cirle img{width:130px;height:130px;border:5px solid #fff;}
     .clear{clear:both;}
     #party-layout{display:inline-block;padding:20px 0px;}
     .layout{margin:auto;text-align:center;}
 
 
-  #gmap{width:100%;border:0;height:230px;position:absolute;top:-47px;left:0px;}
-    #gmap2{width:100%;border:0;position:fixed;bottom:25px;height:230px;left:0px;overflow:hidden;}
+    #map-frame{
+        width:280px;
+        border:0;
+        position:relative;
+        height:300px;
+        overflow:hidden;
+        margin:auto;
+
+        background-color:#fff;
+    }
+
+  #google-map{
+    width:100%;
+    border:0;height:300px;
+    position:absolute;top:-47px;left:0px;}
+
+    #map-frame div{
+        position:absolute;bottom:0px;
+        text-align: center;
+        padding:10px 10%;
+        width:80%;
+    }
+
+    .hotel-color{height:10px;width:10px;margin:auto;border-radius:100%;}
+
+
 
 
     .details{
