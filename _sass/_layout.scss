@@ -77,15 +77,6 @@ padding:0;}
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
 
 #menu{
     background-color:#51494a;
@@ -177,7 +168,13 @@ padding:0;}
     box-shadow: 
     0 0 0 5px rgba(101,27,54,1),
     0 0 0 7px rgba(255,255,255,1);
-    animation: thecolor 10s infinite;}
+    animation: thecolor 10s infinite;
+    }
+    .copy{
+        font-size:12px;
+        line-height:1.4em;
+    }
+
 
 .details a{margin-bottom:12px;display:inline-block;line-height:1.3em;}
 
