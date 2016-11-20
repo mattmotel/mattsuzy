@@ -35,11 +35,10 @@ padding:0;}
 
 /* The animation code */
 @keyframes thecolor {
-0% { box-shadow: 0 0 0 12px #006584, 0 0 0 14px #ffffff; }
-25% { box-shadow: 0 0 0 12px #b51a1a, 0 0 0 14px #ffffff; }
-50% { box-shadow: 0 0 0 12px #50484a, 0 0 0 14px #ffffff; }
-75% { box-shadow: 0 0 0 12px #681b31, 0 0 0 14px #ffffff; }
-100% { box-shadow: 0 0 0 12px #006584, 0 0 0 14px #ffffff; }
+0% { box-shadow: 0 0 0 12px #681b31, 0 0 0 14px #ffffff; }
+50% { box-shadow: 0 0 0 12px #dfadbf, 0 0 0 14px #ffffff; }
+100% { box-shadow: 0 0 0 12px #681b31, 0 0 0 14px #ffffff; }
+
 }
 
 .page-content {
@@ -103,8 +102,8 @@ padding:0;}
 
 
 #menu img{
-    height:32px;
-    padding:5px 10px;
+    height:30px;
+    padding:5px 6px;
 }
 #menu a{float:left;padding:0px 2px;text-decoration: none;}
 #menu a span{font-size:10px;color:rgba(255,255,255,.5);display:block;}
